@@ -20,6 +20,7 @@
 		BBD3F4D49F755CA4C4C6CB51 /* libPods-AwesomeProjectForALPNP-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6FA0B89B7246687D6DF5A3 /* libPods-AwesomeProjectForALPNP-tvOSTests.a */; };
 		C9C6CD68709D04F653399179 /* libPods-AwesomeProjectForALPNP-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7240DDF227AE2C1943CF4FB8 /* libPods-AwesomeProjectForALPNP-tvOS.a */; };
 		F54B024DB10E72A9DC943D69 /* libPods-AwesomeProjectForALPNP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FDBF8E58844D60D8A89C7A2 /* libPods-AwesomeProjectForALPNP.a */; };
+		F8A38D60260AD11D00A131FF /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A38D5F260AD11D00A131FF /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		CDBB28270A3A129E62B25AAB /* Pods-AwesomeProjectForALPNP-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProjectForALPNP-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeProjectForALPNP-tvOSTests/Pods-AwesomeProjectForALPNP-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		F8A38D5E260AD11C00A131FF /* AwesomeProjectForALPNP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AwesomeProjectForALPNP-Bridging-Header.h"; sourceTree = "<group>"; };
+		F8A38D5F260AD11D00A131FF /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		FAE01A311FE30C6AC6E5E54E /* Pods-AwesomeProjectForALPNP-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProjectForALPNP-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeProjectForALPNP-tvOS/Pods-AwesomeProjectForALPNP-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +135,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				F8A38D5F260AD11D00A131FF /* File.swift */,
+				F8A38D5E260AD11C00A131FF /* AwesomeProjectForALPNP-Bridging-Header.h */,
 			);
 			name = AwesomeProjectForALPNP;
 			sourceTree = "<group>";
@@ -161,7 +166,6 @@
 				7AD30FC068883FD2821167D6 /* Pods-AwesomeProjectForALPNPTests.debug.xcconfig */,
 				7F2881FCA54547273109DA9D /* Pods-AwesomeProjectForALPNPTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -292,6 +296,9 @@
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1240;
+					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -308,6 +315,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -529,6 +537,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				F8A38D60260AD11D00A131FF /* File.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -582,6 +591,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AD30FC068883FD2821167D6 /* Pods-AwesomeProjectForALPNPTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -605,6 +615,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7F2881FCA54547273109DA9D /* Pods-AwesomeProjectForALPNPTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = AwesomeProjectForALPNPTests/Info.plist;
@@ -626,6 +637,7 @@
 			baseConfigurationReference = 7DA0FD815B508A4A77A8B399 /* Pods-AwesomeProjectForALPNP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				INFOPLIST_FILE = AwesomeProjectForALPNP/Info.plist;
@@ -637,6 +649,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = AwesomeProjectForALPNP;
+				SWIFT_OBJC_BRIDGING_HEADER = "AwesomeProjectForALPNP-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -646,6 +661,7 @@
 			baseConfigurationReference = 88C27FBF3C93C361CAB57F67 /* Pods-AwesomeProjectForALPNP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = AwesomeProjectForALPNP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -656,6 +672,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = AwesomeProjectForALPNP;
+				SWIFT_OBJC_BRIDGING_HEADER = "AwesomeProjectForALPNP-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
