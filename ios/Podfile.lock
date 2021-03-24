@@ -1,4 +1,8 @@
 PODS:
+  - Amplitude (8.2.0)
+  - amplitude-react-native (2.0.11):
+    - Amplitude (= 8.2.0)
+    - React-Core
   - boost-for-react-native (1.63.0)
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.61.4)
@@ -220,6 +224,7 @@ PODS:
   - Yoga (1.14.0)
 
 DEPENDENCIES:
+  - "amplitude-react-native (from `../node_modules/@amplitude/react-native`)"
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - FBReactNativeSpec (from `../node_modules/react-native/Libraries/FBReactNativeSpec`)
@@ -251,9 +256,12 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Amplitude
     - boost-for-react-native
 
 EXTERNAL SOURCES:
+  amplitude-react-native:
+    :path: "../node_modules/@amplitude/react-native"
   DoubleConversion:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
   FBLazyVector:
@@ -306,6 +314,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  Amplitude: 263118b9e691e73a1c864b05bb08a3aff3636d16
+  amplitude-react-native: 1a42c25056741716c54e54ecbb5f2019e5036382
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
   FBLazyVector: feb35a6b7f7b50f367be07f34012f34a79282fa3
@@ -333,6 +343,6 @@ SPEC CHECKSUMS:
   ReactCommon: a6a294e7028ed67b926d29551aa9394fd989c24c
   Yoga: ba3d99dbee6c15ea6bbe3783d1f0cb1ffb79af0f
 
-PODFILE CHECKSUM: bd36c2c826f799a4725e75c8e80cdec7fcfd14e7
+PODFILE CHECKSUM: 6275874f1c7b0024e6278ffb1ef66e79c3270eca
 
 COCOAPODS: 1.10.1
